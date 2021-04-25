@@ -1,0 +1,20 @@
+@media screen and (max-width: 700px) {
+    .search, .ad {display: none;}
+  }
+  
+  @media screen and (min-width: 700px) {
+    header {grid-template-columns: auto auto auto;}
+  
+    main {
+      max-width: 1200px;
+  
+      grid-template-areas:
+        'video-player video-player ad'
+        'video-player video-player up-next'
+        'video-info   actions      up-next'
+        'channel      subscribe    up-next'
+        '.            .            up-next';
+    }
+  
+    .video-info {border-bottom: 1px solid #ddd;}
+  }  
